@@ -15,7 +15,7 @@ import {
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'Contactanos al 442 149 1027', href: '#' }
+  { name: 'Contactanos al 442 149 1027', href: 'https://wa.me/4421491027' }
 ]
 const features = [
   {
@@ -100,7 +100,6 @@ const footerNavigation = {
     { name: 'Insragrma', href: '#' },
     { name: 'Facebook', href: '#' },
     { name: 'LinkedIn', href: '#' },
-    { name: 'X', href: '#' },
   ],
   support: [
     { name: 'Precios', href: '#' },
@@ -135,7 +134,7 @@ export default function Example() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">HR Agentes de Seguros Integrales</span>
-              <h2 className='text-2xl font-bold text-white justify-center font-serif'>HR Agentes <br />de Seguros Integrales</h2>
+              <h2 className='text-2xl font-bold text-white justify-center'>HR Agentes <br />de Seguros Integrales</h2>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -151,8 +150,9 @@ export default function Example() {
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <div key={item.name} className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-100 ring-1 ring-white/10 hover:ring-white/20">
-                {item.name}
+
                 <a href={item.href} className="font-semibold text-white">
+                  {item.name}
                 </a>
               </div>
             ))}
@@ -165,7 +165,7 @@ export default function Example() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">HR Agentes de Seguros Integrales</span>
-                <h2 className='text-2xl font-bold text-zinc-600 justify-center font-serif'>HR Agentes <br />de Seguros Integrales</h2>
+                <h2 className='text-2xl font-bold text-zinc-600 justify-center'>HR Agentes <br />de Seguros Integrales</h2>
               </a>
               <button
                 type="button"
@@ -248,40 +248,42 @@ export default function Example() {
             {/* Logo cloud */}
             <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
               <img
+                className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src="https://media.graphassets.com/gjITWgGRsalSIxHTXo1Z?_gl=1*hucsm3*_ga*ODgyNzA2NTU0LjE2ODk5NjQ5NDc.*_ga_G6FYGSYGZ4*MTY5NzU1NjMxNy40OC4xLjE2OTc1NTY5NjcuNDcuMC4w"
+                alt="Statamic"
+                width={158}
+                height={48}
+              />
+              <img
                 className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
+                src="https://static.elpotosi.com.mx/LogoSEP-40px.png"
                 alt="Transistor"
                 width={158}
                 height={48}
               />
               <img
                 className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
+                src="https://www.hdi.com.mx/wp-content/themes/hdi-v2/common/svg/logo-hdi-full.svg"
                 alt="Reform"
                 width={158}
                 height={48}
               />
               <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-                alt="Tuple"
-                width={158}
-                height={48}
-              />
-              <img
                 className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
+                src="https://media.graphassets.com/ogPBtuUR5WSnjY3fzJ09?_gl=1*1flvhjb*_ga*ODgyNzA2NTU0LjE2ODk5NjQ5NDc.*_ga_G6FYGSYGZ4*MTY5NzU1NjMxNy40OC4xLjE2OTc1NTY4NjcuNDkuMC4w"
                 alt="SavvyCal"
                 width={158}
                 height={48}
               />
               <img
-                className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-                alt="Statamic"
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                src="https://media.graphassets.com/4nmW81SkTXS9bWymUhQb?_gl=1*2sx0wy*_ga*ODgyNzA2NTU0LjE2ODk5NjQ5NDc.*_ga_G6FYGSYGZ4*MTY5NzU1NjMxNy40OC4xLjE2OTc1NTY3ODIuNDUuMC4w"
+                alt="Tuple"
                 width={158}
                 height={48}
               />
+
+
             </div>
           </div>
           <div
@@ -312,7 +314,7 @@ export default function Example() {
           <div className="relative overflow-hidden pt-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <img
-                src="https://media.graphassets.com/4vM8CefVSbqquekDPw6t?_gl=1*t0t7ua*_ga*ODgyNzA2NTU0LjE2ODk5NjQ5NDc.*_ga_G6FYGSYGZ4*MTY5NzUwNDg1Ny40Ni4xLjE2OTc1MDY4MDUuNjAuMC4w"
+                src="https://media.graphassets.com/yZ1QiNjRjCifF4ublRwg?_gl=1*rgf2kr*_ga*ODgyNzA2NTU0LjE2ODk5NjQ5NDc.*_ga_G6FYGSYGZ4*MTY5NzU1NjMxNy40OC4xLjE2OTc1NTYzNDMuMzQuMC4w"
                 alt="App screenshot"
                 className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
                 width={2432}
@@ -532,7 +534,7 @@ export default function Example() {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">HR Agentes de Seguros Integrales</span>
-              <h2 className='text-2xl font-bold text-white justify-center font-serif'>HR Agentes <br />de Seguros Integrales</h2>
+              <h2 className='text-2xl font-bold text-white justify-center'>HR Agentes <br />de Seguros Integrales</h2>
             </a>
             <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
               <div className="md:grid md:grid-cols-2 md:gap-8">
